@@ -1,0 +1,161 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[croatian]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Ante}
+\familyname{Kegalj}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Solinska 8}{10010 Zagreb}    % optional, remove the line if not wanted
+\mobile{091~7942~640}                     % optional, remove the line if not wanted
+\phone{(01)~6234~283}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{akegalj@gmail.com}                          % optional, remove the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture1}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Sažetak}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Obrazovanje}
+\cventry{2010.--2012.}{Diplomski studij}{Fakultet elektrotehnike i računarstva}{Zagreb}{\textit{mag.~ing.~računarstva}}{smjer: \textit{računarska znanost}}  % arguments 3 to 6 can be left empty
+\cventry{2006.--2010.}{Preddiplomski studij}{Fakultet elektrotehnike i računarstva}{Zagreb}{}{smjer: \textit{računarstvo}}  % arguments 3 to 6 can be left empty
+\cventry{2002.--2006.}{Srednja škola}{XV. gimnazija}{Zagreb}{}{sudjelovao na međunarodnom natjecanju iz informatike \textit{ACSL}}
+
+\section{Diplomski rad}
+\cvitem{naslov}{\emph{Strojna analiza sentimenta temeljena na apriornoj polarnosti riječi}}
+\cvitem{mentor}{Doc. dr. sc. Jan Šnajder}
+\cvitem{opis}{Porastom komunikacije putem Interneta povećao se interes za strojnom analizom mišljenja izraženog u korisnički generiranom tekstu. Jedan od pristupa analizi mišljenja jest analiza sentimenta, kojom se utvrđuje je li tekst pozitivno, negativno ili neutralno orijentiran. Ovakav sustav imao bi široku primjenu u marketingu prilikom analize zadovoljstva korisnika nekim proizvodom, u istraživanju socijalnih mreža i sl.}
+
+\section{Radno iskustvo}
+\subsection{Stručno}
+\cventry{2013.--}{Projekt po narudžbi, naručitelj ELEMENT EM5 d.o.o.}{}{Zagreb}{}{Programer web aplikacija i web dizajner.%
+\begin{itemize}%
+\item \textit{Privatan projekt}:
+  \begin{itemize}%
+  \item samostalna izrada (za sada)
+  \item trajanje 1 mjesec;
+  \item poslovna aplikacija
+  \item \textit{front-end} i \textit{back-end} rješenje;
+  \item tehnologije: Ruby on Rais, Android;
+  \end{itemize}
+\end{itemize}}
+\cventry{2010.--2011.}{CROZ d.o.o.}{}{Zagreb}{}{Programer web aplikacija i web dizajner.\newline{}%
+Projekti:%
+\begin{itemize}%
+\item \textit{MORH -- Vozila}:
+  \begin{itemize}%
+  \item tim od 1 voditelja projekta, 2 analitičara i 3 programera;
+  \item trajanje 12 mjeseci;
+  \item poslovna aplikacija za \textit{Ministarstvo obrane Republike Hrvatske};
+  \item \textit{front-end} i \textit{back-end} programer;
+  \item tehnologije: Adobe Flex, Java, Hibernate, Informix;
+  \end{itemize}
+\item \textit{EVRA}:
+  \begin{itemize}%
+  \item tim od 1 voditelja projekta, 3 analitičara i 7 programera;
+  \item trajanje 4 mjeseca;
+  \item poslovna aplikacija za \textit{Ministarstvo obrane Republike Hrvatske};
+  \item front-end, web dizajner;
+  \item tehnologije: Javascript, CSS, HTML, JSP, JQuery;
+  \end{itemize}
+\item travanj 2010. \textit{Learn@CROZ} Adobe Flex -- RIA tečaj
+\end{itemize}}
+\subsection{Ostalo}
+\cventry{2009.--}{Informatički klub VEL\_IK}{}{Velika Gorica}{}{Predavač programskih jezika (qbasic, visual basic, c)\newline{}
+travanj 2011., \textit{INFOKUP} -- mentor na državnoj smotri softverskih radova}
+\section{Jezici}
+\cvitemwithcomment{Hrvatski}{}{materini jezik}
+\cvitemwithcomment{Engleski}{}{aktivan u pismu}
+
+\section{Tehnička znanja i vještine}
+\cvitem{operacijski sustavi}{Windows, \textbf{Linux}}
+\cvitem{programski jezici}{\textbf{C}, C++, \textbf{Java}, C\#, PHP, \textbf{SQL}, \textbf{javaScript}, actionScript, Adobe Flex, \textbf{Haskell}, \textbf{Linux/Bash}}
+\cvitem{baze podataka}{\textbf{MySQL}, IBM Informix, SQLite}
+\cvitem{ostalo}{Matlab/Octave, Wolfram Mathematica}
+\cvitem{*}{\textit{Podebljana slova označavaju aktivno korištenje}}
+
+
+\section{Samostalni radovi}
+\cvitem{}{Autor računalne igre (c/allegro)}
+\cvitem{}{Primjeri projekata napravljenih uz kolegije na faksu:
+  \begin{itemize}
+  \item[~-] Nenadzirano prepoznavanje krajeva rečenica u tekstu % višejezično!
+  \item[~-] Prepoznavanje lica
+  \item[~-] Ispravljanje OCR pogrešaka
+  \end{itemize}}
+
+\section{Interesi}
+\cvitem{}{obrada prirodnog jezika, psihologija}
+\cvitem{}{plivanje, trčanje, biciklizam}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{ReversingLabs d.o.o.}{Savska 106\\10010 Zagreb\\Hrvatska}
+\date{}
+\opening{Poštovani,}
+\closing{Hvala i srdačan pozdrav,}
+%\enclosure{curriculum vit\ae{}}
+\makelettertitle
+
+Javljam se na natječaj za \textit{programera} objavljenog na Vašoj web stranici dana 18.~siječnja 2013.~godine.
+
+Imam 25 godina i u devetom mjesecu prošle godine diplomirao sam na Fakultetu elektrotehnike i računarstva u Zagrebu, smjer računarska znanost. Dosad sam imao priliku raditi na nekoliko projekata, između kojih je i razvoj web aplikacija za \textit{Ministarstvo unutarnjih poslova Republike Hrvatske}. Na taj način stekao sam iskustvo u radu u timu i tehnička znanja u razvoju web aplikacija. Iskustva u razvoju aplikacija u programskim jezicima \textit{C/C++} stekao sam najviše kroz natjecanja u srednjoj školi, a u novije vrijeme za rješavanje manjih zadataka u izradi diplomskog rada. Iskustva u radu na većim projektima u programskom jeziku \textit{C++} nemam, no smatram da mi stjecanje istoga ne bi predstavljalo problem. Kroz izradu diplomskog rada susreo sam se s problemom obrade veće baze podataka, gdje sam imao priliku naučiti nešto o \textit{Mahout-u} koji je izgrađen nad \textit{Hadoop-om}. Prije toga, \textit{Map-Reduce} paradigmu susreo sam na jednom kolegiju na faksu, no rješavanje \textit{BigData} problema me zanima i već dugo se namjeravam okušati u tome području pa bi mi ovakva prilika puno značila. Osim toga, smatram da svojim znanjem i vještinama mogu doprinijeti i Vama te opravdati ukazano povjerenje. 
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
