@@ -1,0 +1,153 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[croatian]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Ante}
+\familyname{Kegalj}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Solinska 8}{10010 Zagreb, Croatia}    % optional, remove the line if not wanted
+\mobile{(+385)~091~7942~640}                     % optional, remove the line if not wanted
+\phone{(+385)~01~6234~283}                      % optional, remove the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
+\email{akegalj@gmail.com}                          % optional, remove the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove the line if not wanted
+%\extrainfo{additional information}            % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture1}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Sažetak}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2010--2012}{Master's degree}{Faculty of Electrical Engineering and Computing}{Zagreb}{\textit{mag.~ing.~comp}}{field of study: \textit{Computer Science}\newline%
+  Master thesis: \emph{Sentiment Analysis Based on Prior Word Polarity}\newline  % arguments 3 to 6 can be left empty
+  Other projects: 
+  \begin{itemize}
+  \item[~-] Unsupervised sentence boundary disambiguation % višejezično!
+  \item[~-] Face recognition
+  \item[~-] OCR correction
+  \end{itemize}}
+
+
+\cventry{2006--2010}{Bachelor of Science (B.S.)}{Faculty of Electrical Engineering and Computing}{Zagreb}{}{field of study: \textit{Computing}}  % arguments 3 to 6 can be left empty
+\cventry{2002--2006}{High Scool}{XV. gymnasium}{Zagreb}{}{participated in the international competition in programming, \textit{ACSL}}
+
+\section{Experience}
+% \subsection{In profession}
+\cventry{2013--}{ELEMENT EM5 d.o.o. IT department}{}{Zagreb}{}{Main architect and lead developer.\newline%
+Projects:%
+\begin{itemize}%
+\item \textit{Quats}:
+  \begin{itemize}%
+  \item one-men project (for now)
+  \item 3 months, in progress;
+  \item System for managing Guest Relations in facilities like hotels, marines.
+  \item \textit{front-end} and \textit{back-end} solution;
+  \item tehnologies: Ruby on Rais, Android;
+  \end{itemize}
+\item \textit{EnTour}:
+  \begin{itemize}%
+  \item consisting of 2 developers
+  \item 1 month, in progress;
+  \item System for advertising entertainment in Croatian tourism.
+  \item \textit{front-end} and \textit{back-end} solution;
+  \item tehnologies: Ruby on Rais;
+  \end{itemize}
+\end{itemize}}
+\cventry{2010--2011}{CROZ d.o.o.}{}{Zagreb}{}{Junior Developer.\newline{}%
+Projects:%
+\begin{itemize}%
+\item \textit{MORH -- Vozila}:
+  \begin{itemize}%
+  \item team of 1 project manager, 2 analysts and 3 developers;
+  \item 12 months;
+  \item business application for the \textit{Ministry of Defence of the Republic of Croatia};
+  \item Adobe Flex programmer;
+  \item tehnologies: Adobe Flex, Java, Hibernate, Informix;
+  \end{itemize}
+\item \textit{EVRA}:
+  \begin{itemize}%
+  \item team of 1 project manager, 3 analysts and 7 developers;
+  \item 4 months;
+  \item ERP application designed for the \textit{Ministry of Defence of the Republic of Croatia};
+  \item front-end, web design;
+  \item tehnologies: Javascript, CSS, HTML, JSP, JQuery;
+  \end{itemize}
+\item April 2010. \textit{Learn@CROZ} Adobe Flex -- RIA course
+\end{itemize}}
+\subsection{Other}
+\cventry{2009--}{IT group VEL\_IK}{}{Velika Gorica}{}{Lecturer in programming languages for elementary school students(qbasic, visual basic, c)\newline{}
+April 2011., \textit{INFOKUP} -- Mentor at State Championship in software}
+
+\section{Languages}
+\cvitemwithcomment{Croatian}{}{native language}
+\cvitemwithcomment{English}{}{active in writing}
+
+\section{Skills and expertise}
+\cvitem{operating system}{Windows, \textbf{Linux}}
+\cvitem{programming language}{\textbf{C}, C++, Java, C\#, PHP, \textbf{SQL}, \textbf{javaScript}, \textbf{HTML}, actionScript, Haskell, \textbf{Ruby}, Bash script}
+\cvitem{database}{\textbf{MySQL}, IBM Informix, SQLite, PostgreSQL}
+\cvitem{rest}{Matlab/Octave, Wolfram Mathematica, Latex}
+\cvitem{*}{\textit{Bold letters indicate active use.}}
+
+\section{Interests}
+\cvitem{}{natural language processing, big data}
+\cvitem{}{swimming, running, basketball}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}              % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}              % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+
+%\clearpage\end{CJK*}                         % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
