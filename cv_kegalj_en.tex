@@ -33,9 +33,9 @@
 \phone{(+385)~01~6234~283}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{akegalj@gmail.com}                          % optional, remove the line if not wanted
-\homepage{ante-kegalj.from.hr}                    % optional, remove the line if not wanted
+%\homepage{ante-kegalj.from.hr}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
-\photo[64pt][0.4pt]{picture1}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \photo[64pt][0.4pt]{picture1}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Sažetak}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -55,22 +55,14 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2010--2012}{Master's degree}{Faculty of Electrical Engineering and Computing}{Zagreb}{\textit{mag.~ing.~comp}}{field of study: \textit{Computer Science}\newline%
-  Master thesis: \emph{Sentiment Analysis Based on Prior Word Polarity}\newline  % arguments 3 to 6 can be left empty
-  Other projects: 
-  \begin{itemize}
-  \item[~-] Unsupervised sentence boundary disambiguation % višejezično!
-  \item[~-] Face recognition
-  \item[~-] OCR correction
-  \end{itemize}}
+\cventry{2010--2012}{Master's degree}{Faculty of Electrical Engineering and Computing}{Zagreb}{\textit{mag.~ing.~comp}}{
+Master thesis: \emph{Sentiment Analysis Based on Prior Word Polarity}}  % arguments 3 to 6 can be left empty
 
-
-\cventry{2006--2010}{Bachelor of Science (B.S.)}{Faculty of Electrical Engineering and Computing}{Zagreb}{}{field of study: \textit{Computing}}  % arguments 3 to 6 can be left empty
-\cventry{2002--2006}{High Scool}{XV. gymnasium}{Zagreb}{}{participated in the international competition in programming, \textit{ACSL}}
+\cventry{2006--2010}{Bachelor of Science}{Faculty of Electrical Engineering and Computing}{Zagreb}{}{}  % arguments 3 to 6 can be left empty
 
 \section{Experience}
 % \subsection{In profession}
-\cventry{2013--}{Mariva Projekt d.o.o. IT department}{}{Zagreb}{}{Co-founder, lead developer.\newline%
+\cventry{2013--2014}{Mariva Travel d.o.o.}{}{Zagreb}{}{Technical co-founder, lead developer.\newline%
 Projects:%
 \begin{itemize}%
 \item \textit{GeoCheckin}:
@@ -84,13 +76,13 @@ Projects:%
 \item \textit{www.visitcro.com}:
   \begin{itemize}%
   \item co-founded, consisting of 2 more developers
-  \item 6 month, in progress;
+  \item 12 months, in progress;
   \item System for advertising accommodation, sights and entertainment in Croatian tourism.
   \item \textit{front-end} and \textit{back-end} solution;
   \item technologies: Haskell (yesod), AngularJS, JQuery;
   \end{itemize}
 \end{itemize}}
-\cventry{2013}{ELEMENT EM5 d.o.o. IT department}{}{Zagreb}{}{Main architect and lead developer.\newline%
+\cventry{2013}{ELEMENT EM5 d.o.o.}{}{Zagreb}{}{Main architect and lead developer.\newline%
 Projects:%
 \begin{itemize}%
 \item \textit{Quats}:
@@ -129,25 +121,23 @@ Projects:%
   \item front-end, web design;
   \item technologies: JavaScript, CSS, HTML, JSP, JQuery;
   \end{itemize}
-\item April 2010. \textit{Learn@CROZ} Adobe Flex -- RIA course
 \end{itemize}}
 \subsection{Other}
-\cventry{2009--}{IT group VEL\_IK}{}{Velika Gorica}{}{Lecturer in programming languages for elementary school students(qbasic, visual basic, c)\newline{}
+\cventry{2009--}{IT group VEL\_IK}{}{Velika Gorica}{}{Lecturer in programming languages for elementary school students(qbasic, visual basic, c, python)\newline{}
 April 2011., \textit{INFOKUP} -- Mentor at State Championship in software}
-\cventry{2014--}{Faculty of Electrical Engineering and Computing}{}{Zagreb}{}{Teaching assistant at university (Haskell)}
+\cventry{2013--}{Faculty of Electrical Engineering and Computing}{}{Zagreb}{}{Teaching assistant at university (Haskell)}
 
-\section{Languages}
-\cvitemwithcomment{Croatian}{}{native language}
-\cvitemwithcomment{English}{}{active in writing}
+% \section{Languages}
+% \cvitemwithcomment{Croatian}{}{native language}
+% \cvitemwithcomment{English}{}{active in writing and speaking}
 
 \section{Skills and expertise}
-\cvitem{operating system}{Windows, Linux}
-\cvitem{programming language}{C, Java/C\#, PostgreSql, JavaScript, HTML, Haskell, Ruby, Python, Bash script}
-\cvitem{rest}{Matlab/Octave, Latex}
+% \cvitem{operating system}{Windows, Linux}
+\cvitem{programming language}{C, Java, PostgreSql, Haskell(\textbf{active})}
+% \cvitem{rest}{Matlab/Octave, Latex}
 
 \section{Interests}
-\cvitem{}{natural language processing, computer vision, machine learning, big data}
-\cvitem{}{swimming, running, basketball}
+\cvitem{}{functional programming, natural language processing, computer vision, machine learning, distributed systems}
 
 % Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
 \nocite{*}
