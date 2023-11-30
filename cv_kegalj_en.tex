@@ -6,10 +6,10 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{banking}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -28,12 +28,12 @@
 \firstname{Ante}
 \familyname{Kegalj}
 %\title{Resumé title (optional)}               % optional, remove the line if not wanted
-\address{Solinska 8}{10010 Zagreb, Croatia}    % optional, remove the line if not wanted
+%\address{Solinska 8}{10010 Zagreb, Croatia}    % optional, remove the line if not wanted
 \mobile{(+385)~091~7942~640}                     % optional, remove the line if not wanted
 % \phone{(+385)~01~6234~283}                      % optional, remove the line if not wanted
 %\fax{+3~(456)~789~012}                        % optional, remove the line if not wanted
 \email{akegalj@gmail.com}                          % optional, remove the line if not wanted
-%\homepage{ante-kegalj.from.hr}                    % optional, remove the line if not wanted
+\homepage{https://github.com/akegalj}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
 %\photo[64pt][0.4pt]{picture1}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Sažetak}                 % optional, remove the line if not wanted
@@ -62,14 +62,14 @@
 %  \item technologies: Haskell, htmx
 %  \end{itemize}
 %\end{itemize}}
-\cventry{Oct 2021--Oct 2023}{STABLO ISTRA d.o.o.}{}{remote, part-time}{}{
+\cventry{Oct 2021--Oct 2023}{Stablo Istra}{Consultant}{remote, part-time}{}{
 \begin{itemize}%
 \item \textit{nft collection minting script for OctoWars card game}
   \begin{itemize}%
   \item technologies: Python, Plutus
   \end{itemize}
 \end{itemize}}
-\cventry{Mar--Jun 2021}{Lunatic Inc.}{}{Velika Gorica}{}{
+\cventry{Mar--Jun 2021}{Lunatic Inc.}{Software Engineer}{V.Gorica}{}{
 \begin{itemize}%
 \item \textit{Lunatic - WebAssembly runtime inspired by Erlang}
   \begin{itemize}%
@@ -77,14 +77,15 @@
   \item technologies: Rust, WebAssembly
   \end{itemize}
 \end{itemize}}
-\cventry{2017--Jun 2019}{Input Output Global (formerly Input Output Hong Kong)}{}{remote}{}{wallet backend lead, blockchain explorer lead
+\cventry{2017--Jun 2019}{Input Output Global}{Lead Software Engineer}{remote}{}{
 \begin{itemize}%
 \item \textit{Cardano - decentralized blockchain network}
   \begin{itemize}%
+  \item wallet backend, blockchain explorer
   \item technologies: Haskell, PureScript
   \end{itemize}
 \end{itemize}}
-\cventry{2015--2017}{Serokell}{}{remote}{}{%
+\cventry{2015--2017}{Serokell}{Software Engineer}{remote}{}{%
 \begin{itemize}%
 \item \textit{Bitgram - bitcoin-based payment platform}
   \begin{itemize}%
@@ -95,14 +96,14 @@
   \item technologies: Haskell, PureScript
   \end{itemize}
 \end{itemize}}
-\cventry{2015--2016}{MarketPsych}{}{remote, part-time}{}{%
+\cventry{2015--2016}{MarketPsych}{Freelance Software Engineer}{remote, part-time}{Upwork}{%
 \begin{itemize}%
 \item \textit{optimising preformance, automated tools for trading}
   \begin{itemize}%
   \item technologies: Haskell, Python, R
   \end{itemize}
 \end{itemize}}
-\cventry{2015}{Studio Revolucija d.o.o.}{}{Zagreb}{}{
+\cventry{2015}{Studio Revolucija}{Web Developer}{Zagreb}{}{
 \begin{itemize}%
 \item \textit{web app development}
   \begin{itemize}%
@@ -113,21 +114,22 @@
   \item technologies: Arduino, C
   \end{itemize}
 \end{itemize}}
-\cventry{2013--2015}{Mariva Travel d.o.o.}{}{Zagreb}{}{Technical co-founder, lead developer
+\cventry{}{}{}{}{}{} % TODO: this is temp to correctly split pages
+\cventry{2013--2015}{Mariva Travel}{Technical Co-Founder, Lead Software Engineer}{Zagreb}{}{
 \begin{itemize}%
 \item \textit{System for advertising accommodation, sights and entertainment in Croatian tourism}
   \begin{itemize}%
   \item technologies: Haskell (yesod), AngularJS
   \end{itemize}
 \end{itemize}}
-\cventry{2013}{ELEMENT EM5 d.o.o.}{}{Zagreb}{}{Lead developer
+\cventry{2013}{ELEMENT EM5}{Lead Software Engineer}{Zagreb}{}{
 \begin{itemize}%
 \item \textit{System for managing Guest Relations in facilities like hotels and marinas}
   \begin{itemize}%
   \item technologies: Ruby on Rails;
   \end{itemize}
 \end{itemize}}
-\cventry{2010--2012}{CROZ d.o.o.}{}{Zagreb}{}{Junior Developer
+\cventry{2010--2012}{CROZ}{Junior Software Engineer}{Zagreb}{}{
 \begin{itemize}%
   \item \textit{business application for the Ministry of Defence (Croatia)}
   \begin{itemize}%
@@ -137,15 +139,14 @@
 
 \section{Lecturing}
 \cventry{2022--}{Faculty of Electrical Engineering and Computing}{}{Zagreb}{}{Co-organizer and lecturer of Haskell introductory course }
-\cventry{2020}{Elementary school}{}{Velika Mlaka}{}{Lecturer in software development (Python)}
+\cventry{2020}{Elementary school}{}{V.Mlaka}{}{Lecturer in software development (Python)}
 \cventry{2011, 2020}{INFOKUP}{}{Croatia}{}{Mentor for Elementary school students in State Championship in software}
 \cventry{2013--2015}{Faculty of Electrical Engineering and Computing}{}{Zagreb}{}{Teaching assistant of Haskell introductory course }
-\cventry{2009--2015}{IT group VEL\_IK}{}{Velika Gorica}{}{Lecturer in programming languages for elementary school students (QBasic, Visual Basic, C, Python)}
+\cventry{2009--2015}{IT group VEL\_IK}{}{V.Gorica}{}{Lecturer in programming languages for elementary school students (QBasic, Visual Basic, C, Python)}
 
 \section{Education}
-  \cventry{2010--2012}{Master's degree}{Faculty of Electrical Engineering and Computing}{Zagreb}{\textit{mag.~ing.~comp}}{}
-\cventry{2006--2010}{Bachelor of Science}{Faculty of Electrical Engineering and Computing}{Zagreb}{}{}  % arguments 3 to 6 can be left empty
-
+\cventry{2010--2012}{University of Zagreb Faculty of Electrical Engineering and Computing}{}{}{}{Master's degree (\textit{mag.~ing.~comp})}
+\cventry{2006--2010}{University of Zagreb Faculty of Electrical Engineering and Computing}{}{}{}{Bachelor of Science}
 
 % \section{Languages}
 % \cvitemwithcomment{Croatian}{}{native language}
