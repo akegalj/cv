@@ -9,7 +9,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -21,7 +21,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2.8cm}           % if you want to change the width of the column with the dates
 %\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
@@ -35,7 +35,7 @@
 \email{akegalj@gmail.com}                          % optional, remove the line if not wanted
 %\homepage{ante-kegalj.from.hr}                    % optional, remove the line if not wanted
 %\extrainfo{additional information}            % optional, remove the line if not wanted
-% \photo[64pt][0.4pt]{picture1}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\photo[64pt][0.4pt]{picture1}                  % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
 %\quote{Sažetak}                 % optional, remove the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -54,64 +54,75 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Education}
-  \cventry{2010--2012}{Master's degree}{Faculty of Electrical Engineering and Computing}{Zagreb}{\textit{mag.~ing.~comp}}{}
-\cventry{2006--2010}{Bachelor of Science}{Faculty of Electrical Engineering and Computing}{Zagreb}{}{}  % arguments 3 to 6 can be left empty
-
 \section{Experience}
-% \subsection{In profession}
+\cventry{2017--June 2019}{Input Output Global (formerly Input Output Hong Kong)}{}{remote}{}{wallet backend lead, blockchain explorer lead
+\begin{itemize}%
+\item \textit{Cardano - decentralized blockchain network}
+  \begin{itemize}%
+  \item technologies: Haskell, PureScript
+  \end{itemize}
+\end{itemize}}
 \cventry{2015--2017}{Serokell}{}{remote}{}{%
 \begin{itemize}%
-\item \textit{Bitgram - bitcoin-based payment platform}:
+\item \textit{Bitgram - bitcoin-based payment platform}
   \begin{itemize}%
   \item technologies: Haskell, Elm
+  \end{itemize}
+\item \textit{Cardano - decentralized blockchain network}
+  \begin{itemize}%
+  \item technologies: Haskell, PureScript
   \end{itemize}
 \end{itemize}}
 \cventry{2015--2016}{MarketPsych}{}{remote, part-time}{}{%
 \begin{itemize}%
-\item \textit{optimising preformance, automated tools for trading}:
+\item \textit{optimising preformance, automated tools for trading}
   \begin{itemize}%
   \item technologies: Haskell, Python, R
   \end{itemize}
 \end{itemize}}
 \cventry{2015}{Studio Revolucija d.o.o.}{}{Zagreb}{}{
 \begin{itemize}%
-\item \textit{web app development}:
+\item \textit{web app development}
   \begin{itemize}%
   \item technologies: Python (django)
   \end{itemize}
-\item \textit{distance sensor for tourist info device in museums}:
+\item \textit{proximity sensor driver for tourist info device in museums}
   \begin{itemize}%
   \item technologies: Arduino, C
   \end{itemize}
 \end{itemize}}
 \cventry{2013--2015}{Mariva Travel d.o.o.}{}{Zagreb}{}{Technical co-founder, lead developer
 \begin{itemize}%
-\item \textit{System for advertising accommodation, sights and entertainment in Croatian tourism}:
+\item \textit{System for advertising accommodation, sights and entertainment in Croatian tourism}
   \begin{itemize}%
   \item technologies: Haskell (yesod), AngularJS
   \end{itemize}
 \end{itemize}}
 \cventry{2013}{ELEMENT EM5 d.o.o.}{}{Zagreb}{}{Lead developer
 \begin{itemize}%
-\item \textit{System for managing Guest Relations in facilities like hotels and marinas}:
+\item \textit{System for managing Guest Relations in facilities like hotels and marinas}
   \begin{itemize}%
   \item technologies: Ruby on Rails;
   \end{itemize}
 \end{itemize}}
 \cventry{2010--2012}{CROZ d.o.o.}{}{Zagreb}{}{Junior Developer
 \begin{itemize}%
-  \item \textit{business application for the Ministry of Defence (Croatia) }:
+  \item \textit{business application for the Ministry of Defence (Croatia)}
   \begin{itemize}%
   \item technologies: Adobe Flex, Java, Hibernate, Informix, JSP
   \end{itemize}
 \end{itemize}}
+
 \section{Lecturing}
 \cventry{2022--}{Faculty of Electrical Engineering and Computing}{}{Zagreb}{}{Co-organizer and lecturer of Haskell introductory course }
 \cventry{2020}{Elementary school}{}{Velika Mlaka}{}{Lecturer in software development (python)}
 \cventry{2011, 2020}{INFOKUP}{}{Croatia}{}{Mentor for Elementary school kids in State Championship in software}
 \cventry{2013--2015}{Faculty of Electrical Engineering and Computing}{}{Zagreb}{}{Teaching assistant of Haskell introductory course }
 \cventry{2009--2015}{IT group VEL\_IK}{}{Velika Gorica}{}{Lecturer in programming languages for elementary school students (qbasic, visual basic, c, python)}
+
+\section{Education}
+  \cventry{2010--2012}{Master's degree}{Faculty of Electrical Engineering and Computing}{Zagreb}{\textit{mag.~ing.~comp}}{}
+\cventry{2006--2010}{Bachelor of Science}{Faculty of Electrical Engineering and Computing}{Zagreb}{}{}  % arguments 3 to 6 can be left empty
 
 
 % \section{Languages}
